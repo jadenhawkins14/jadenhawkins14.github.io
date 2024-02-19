@@ -1,1 +1,15 @@
 
+  h1 {
+  color: blue;
+  background-color: dodgerblue;
+  font-size: x-large;
+}
+body {
+  font-family: Futura, sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+p {
+    text-wrap: pretty;  
+}
+
