@@ -48,7 +48,24 @@
 <p align="center">
     <font color="#000080">
     To see some of my work on UVA's page, <font color="#ffc00"><a href="https://www.instagram.com/uvamenshoops/?hl=en" target="_blank">click here</a> 
-  </p>
+
+</p>
+
+    <h1>Exploring the DOM</h1>
+
+    <h2>Count Down: <span id="count">20</span></h2>
+    <button onclick="updateCount()">Next</button>
+
+    <script>
+        var i = 20;
+
+        function updateCount() {
+            i = i - 1;
+            countobj = document.getElementById("count");
+            console.log("Updating object: " + countobj);
+            countobj.innerHTML = "<b>" + i + "</b>";
+        }
+    </script>
 
 
 </body>
