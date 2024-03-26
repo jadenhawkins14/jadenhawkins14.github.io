@@ -50,47 +50,31 @@
     To see some of my work on UVA's page, <font color="#ffc00"><a href="https://www.instagram.com/uvamenshoops/?hl=en" target="_blank">click here</a> 
 
 </p>
-    <h2>Count Down: <span id="count">20</span></h2>
-    <button onclick="updateCount()">Next</button>
 
     <script>
-        var i = 10;
-
-function displayCount(counter){
-countobj = document.getElementById("count");
-            countobj.innerHTML = "<b>" + counter + "</b>";
-}
-    function updateCount() {
+        function updateCount() {
             i = i - 1; 
 
             countobj = document.getElementById("count");
             console.log("Updating i: " + i);
             countobj.innerHTML = "<b>" + i + "</b>";
 
-        if ( i < 1 ){
-        document.body.style.backgroundColor = “FF2258”;
-        countobj.innerHTML = “<b><font size = ‘+10’>BANG!</b>”;
-    }
-
+            if (i <= 0) { 
+                countobj.innerHTML = "<b><font size='+5'>BOOM!</b>";
             }
-        
-displayCount(10)
-
-
-
-         if (i < 1) 
-            countobj.style.color = "#fad1d0"
-        if (i < 0)
-            countobj.style.color = "f1807e"
-         if (i < -5)
-            countobj.style.color = "FF0000"
-          if (i < -10)
-            countobj.style.color = "680300"
-          if (i < -15)
-            countobj.style.color = "240100"
 
         }
     </script>
+
+    <script>
+        var i = 5;
+    </script>
+
+    <h2>Count Down: <span id="count"><script>document.write(i)</script></span></h2>
+    <button onclick="updateCount()">Next</button>
+
+
+
 <h3>
 <img src="7H3A4997.jpg" style="width:100%">   
     </h3>
