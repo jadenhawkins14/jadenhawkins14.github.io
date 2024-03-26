@@ -50,18 +50,6 @@
     To see some of my work on UVA's page, <font color="#ffc00"><a href="https://www.instagram.com/uvamenshoops/?hl=en" target="_blank">click here</a> 
 
 </p>
-        <script>
-        let redValue = 0;
-
-        function makeRedder() {
-            redValue += 1;
-            if (redValue > 255) {
-                redValue = 255;
-                clearInterval(colorInterval);
-            }
-            document.body.style.backgroundColor = `rgb(${redValue}, 0, 0)`;
-        }
-        </script>
 
 
     <script>
@@ -71,18 +59,22 @@
             countobj = document.getElementById("count");
             console.log("Updating i: " + i);
             countobj.innerHTML = "<b>" + i + "</b>";
-            makeRedder();
 
-           if (i < 1) 
-            countobj.style.color = "#fad1d0"
-        if (i < 0)
-            countobj.style.color = "f1807e"
-         if (i < -5)
-            countobj.style.color = "FF0000"
-          if (i < -10)
-            countobj.style.color = "680300"
-          if (i < -15)
-            countobj.style.color = "240100"
+            if (i <= 0) { 
+                countobj.innerHTML = "<b><em><font size='+5'>BOOM!</b></em>";
+                     countobj.style.color = "red"
+            }
+
+           if (i < 3) 
+        document.body.style.backgroundColor = "#fad1d0"
+        if (i < 1)
+        document.body.style.backgroundColor = "f1807e"
+         if (i < 0)
+         document.body.style.backgroundColor = "FF0000"
+          if (i < -2)
+        document.body.style.backgroundColor = "680300"
+          if (i < -5)
+          document.body.style.backgroundColor  = "240100"
           
             }
 
