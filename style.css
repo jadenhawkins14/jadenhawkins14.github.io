@@ -12,4 +12,9 @@ body {
 p {
     text-wrap: pretty;  
 }
+    .carousel img {
+        width: 30px; /* Set the desired width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
 
