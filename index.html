@@ -60,17 +60,22 @@ function displayCount(counter){
 countobj = document.getElementById("count");
             countobj.innerHTML = "<b>" + counter + "</b>";
 }
+    function updateCount() {
+            i = i - 1; 
 
-function updateCount() {
-i = i - 1;
-}
+            countobj = document.getElementById("count");
+            console.log("Updating i: " + i);
+            countobj.innerHTML = "<b>" + i + "</b>";
+
+        if ( i < 1 ){
+        document.body.style.backgroundColor = “FF2258”;
+        countobj.innerHTML = “<b><font size = ‘+10’>BANG!</b>”;
+    }
+
+            }
         
 displayCount(10)
 
-if ( i < 1 ){
-document.body.style.backgroundColor = “FF2258”;
-countobj.innerHTML = “<b><font size = ‘+10’>BANG!</b>”;
-}
 
 
          if (i < 1) 
