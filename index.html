@@ -87,13 +87,10 @@
     <h2> Count Down: <span id="count"><script>document.write(i)</script></span></h2>
     <button onclick="updateCount()">Next</button>
 
-    function enlargeText(){
-        
-        }
-        
-    <h3> New Button: <span id="Enlarge Me"><script>document.write(i)</script></span></h3>
-    <button onclick="enlargeText()">Next</button>
-
+    <h3>
+        <button onclick="this.nextElementSibling.style.fontSize = (parseInt(window.getComputedStyle(this.nextElementSibling).fontSize) + 1) + 'px'">Enlarge</button>
+<span style="font-size: 16px">Text to enlarge</span>
+    </h3>h3>
 
 
 
