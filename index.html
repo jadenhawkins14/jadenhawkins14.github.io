@@ -102,11 +102,11 @@ images = ['1.jpeg'
           '4.jpg'
           '5.jpeg']
 var carouselImage = document.getElementById("cimage");
-<button onclick="updateCount()">Next Image</button>
+<button onclick="updateCounter()">Next Image</button>
 
 <script>
 var i = 0;
-function updateCount(){
+function updateCounter(){
     i = i + 1;
     carouselImage.src = images[i]
     if i > 4
