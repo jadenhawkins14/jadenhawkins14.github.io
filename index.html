@@ -51,26 +51,26 @@
 
     <script>
         function updateCount() {
-            i = i - 1; 
+            j = j - 1; 
 
             countobj = document.getElementById("count");
-            console.log("Updating i: " + i);
-            countobj.innerHTML = "<b>" + i + "</b>";
+            console.log("Updating j: " + j);
+            countobj.innerHTML = "<b>" + j + "</b>";
 
-            if (i <= 0) { 
+            if (j <= 0) { 
                 countobj.innerHTML = "<b><em><font size='+5'>Kaboom!</b></em>";
                      countobj.style.color = "white"
             }
 
-           if (i < 5) 
+           if (j < 5) 
         document.body.style.backgroundColor = "#fad1d0"
-        if (i < 4)
+        if (j < 4)
         document.body.style.backgroundColor = "f1807e"
-         if (i < 3)
+         if (j < 3)
          document.body.style.backgroundColor = "FF0000"
-          if (i < 2)
+          if (j < 2)
         document.body.style.backgroundColor = "680300"
-          if (i < 1)
+          if (j < 1)
           document.body.style.backgroundColor  = "240100"
           
             }
@@ -78,7 +78,7 @@
     </script>
 
     <script>
-        var i = 5;
+        var j = 5;
     </script>
 
     <h2> Count Down: <span id="count"><script>document.write(i)</script></span></h2>
@@ -100,9 +100,9 @@
     var carouselImage = document.getElementById("cimage");
 
     function previousImage() {
-        j = (j - 1); // Use modulus to loop back to the start
-        if (j < 0)
-        j = 4;
+        i = (i - 1); // Use modulus to loop back to the start
+        if (i < 0)
+        i = 4;
         carouselImage.src = images[j];
     }
 </script>
