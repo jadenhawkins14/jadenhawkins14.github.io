@@ -98,14 +98,16 @@
     var i = 0;
     var carouselImage = document.getElementById("cimage");
 
-    function updateCounter() {
-        i = (i + 1); // Use modulus to loop back to the start
-        if (i > 4)
-        i = 0;
-        carouselImage.src = images[i];
+    function previousImage() {
+        j = (j - 1); // Use modulus to loop back to the start
+        if (j < 0)
+        j = 4;
+        carouselImage.src = images[j];
     }
 </script>
-<button onclick="updateCounter()">Next Image</button>
+<button onclick="nextImage()">Next Image</button>
+<button onclick="previousImage()">Previous Image</button>
+        
 
 
 
