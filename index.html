@@ -106,7 +106,9 @@
         carouselImage.src = images[i];
     }
    function nextImage() {
-        i = (i + 1) % images.length; 
+        i = (i + 1);
+       if (i > 4)
+        i = 0;
         carouselImage.src = images[i];
    }
     
